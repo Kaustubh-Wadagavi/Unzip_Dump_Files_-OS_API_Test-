@@ -1,31 +1,34 @@
 #! /bin/bash
 
-zipFile='os_fresh.zip'
-unzippedFile='os_fresh.sql'
 workSpace=$1
 
 #Unzips database dumps after changing the directories.
 unzipTheDump()
 {
-	#Extracts Institute and User Suite dump file.
-	unzip -o $workSpace/src/test/resources/os_fresh.zip -d $workSpace/src/test/resources/
+	cd $workSpace/src/test/resources/
 
 	#Extracts CP suite dump file. 
-	unzip -o $workSpace/src/test/resources/cp/os_fresh.zip -d $workSpace/src/test/resources/cp/
+	unzip -o cps/os_fresh.zip -d cps/
+
+	#Extracts Institutes suite dump file 
+	unzip -o institutes/os_fresh.zip -d institutes/ 
 
 	#Extracts Participants suite dump file.
-  	unzip -o $workSpace/src/test/resources/participants/os_fresh.zip -d $workSpace/src/test/resources/participants/
+  	unzip -o participants/os_fresh.zip -d participants/
 
 	#Extracts Site suite dump file.
-	unzip -o $workSpace/src/test/resources/site/os_fresh.zip -d $workSpace/src/test/resources/site/
+	unzip -o sites/os_fresh.zip -d sites/
 
 	#Extracts User_Roles suite dump file.
-	unzip -o $workSpace/src/test/resources/user_roles/os_fresh.zip -d $workSpace/src/test/resources/user_roles/
+	unzip -o user_roles/os_fresh.zip -d user_roles/
+
+	#Extracts User_Roles suite dump file.
+	unzip -o users/os_fresh.zip -d users/
 
 }
 
 
-# Script Starts From Here
+# Script starts from here
 if [ -d "$workSpace" ] 
 then
 	unzipTheDump
