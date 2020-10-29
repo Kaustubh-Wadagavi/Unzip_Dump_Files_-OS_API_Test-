@@ -3,7 +3,7 @@
 workSpace=$1
 
 #Unzips database dumps after changing the directories.
-unzipTheDump()
+unzipTheDumps()
 {
 	cd $workSpace/src/test/resources/
 
@@ -31,7 +31,7 @@ unzipTheDump()
 # Script starts from here
 if [ -d "$workSpace" ] 
 then
-	unzipTheDump
+	unzipTheDumps
 else
 	echo "Please enter the os-api-tests Directory Path through command line!!"
 	exit		
