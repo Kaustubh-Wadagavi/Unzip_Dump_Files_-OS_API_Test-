@@ -34,5 +34,5 @@ then
 	unzipTheDump
 else
 	echo "Please enter the os-api-tests Directory Path through command line!!"
-exit		
+	exit		
 fi
