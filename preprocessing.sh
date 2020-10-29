@@ -22,7 +22,7 @@ unzipTheDump()
 	#Extracts User_Roles suite dump file.
 	unzip -o user_roles/os_fresh.zip -d user_roles/
 
-	#Extracts User_Roles suite dump file.
+	#Extracts Users suite dump file.
 	unzip -o users/os_fresh.zip -d users/
 
 }
