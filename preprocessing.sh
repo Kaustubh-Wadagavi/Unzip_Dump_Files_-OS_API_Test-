@@ -7,7 +7,7 @@ unzipTheDump()
 {
 	cd $workSpace/src/test/resources/
 
-	#Extracts CP suite dump file. 
+	#Extracts CPs suite dump file. 
 	unzip -o cps/os_fresh.zip -d cps/
 
 	#Extracts Institutes suite dump file 
@@ -16,7 +16,7 @@ unzipTheDump()
 	#Extracts Participants suite dump file.
   	unzip -o participants/os_fresh.zip -d participants/
 
-	#Extracts Site suite dump file.
+	#Extracts Sites suite dump file.
 	unzip -o sites/os_fresh.zip -d sites/
 
 	#Extracts User_Roles suite dump file.
